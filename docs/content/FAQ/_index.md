@@ -39,9 +39,14 @@ The Infection Monkey agent shuts off either when it can't find new victims or it
 
 ## How do I reset the Monkey Island password?
 
-When you first access the Monkey Island server, you'll be prompted to create an account. If you forget the credentials you entered, or just want to change them, you need to alter the `server_config.json` file manually.
+When you first access the Monkey Island server, you'll be prompted to create an account.
+If you forget the credentials you entered, or just want to change them, you need to alter
+the `server_config.json` file manually.
 
-This file is located in your specified data directory. On Linux, the default data directory is `$HOME/.monkey_island`, and on Windows, it is `%AppData%\monkey_island`. Reset the contents of this file leaving the **deployment option unchanged** (it might be "VMware" or "Linux" in your case):
+On Linux, the default path to `server_config.json` is `$HOME/.monkey_island/server_config.json`.
+On Windows, it is `%AppData%\monkey_island\server_config.json`.
+Reset the contents of this file leaving the **deployment option unchanged**
+(it might be "VMware" or "Linux" in your case):
 
 ```json
 {
@@ -51,7 +56,9 @@ This file is located in your specified data directory. On Linux, the default dat
   }
 }
 ```
- Then, reset the Monkey Island process. Use `sudo systemctl restart monkey-island.service` on Linux, or on Windows, restart program.
+ Then, reset the Monkey Island process.
+ On Linux, use `sudo systemctl restart monkey-island.service`.
+ On Windows, restart the program.
  Finally, go to the Monkey Island's URL and create a new account.
 
 ## Should I run the Infection Monkey continuously?
