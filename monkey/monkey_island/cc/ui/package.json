@@ -83,7 +83,7 @@
     "filepond": "^4.23.1",
     "jwt-decode": "^2.2.0",
     "lodash": "^4.17.20",
-    "marked": "^2.0.0",
+    "marked": "^2.0.3",
     "normalize.css": "^8.0.0",
     "pluralize": "^7.0.0",
     "prop-types": "^15.7.2",
